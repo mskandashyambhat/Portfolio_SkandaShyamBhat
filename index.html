@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M Skanda Shyam Bhat – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/m-skanda-shyam-bhat-32357427a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/skanda_shyam/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:skandashyam102@gmail.com"><i class="fa fa-envelope"></i></a>
+         <a href="https://github.com/mskandashyambhat" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+      <h1>I am M Skanda Shyam Bhat</h1>
+      <p>Professional web developer & computer science engineer with deep expertise in machine learning,<br /> cloud security, and automation.</p>
+      <button class="portfolio-btn" onclick="window.location='projects.html'">My Portfolio</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 M Skanda Shyam Bhat. All rights reserved.
+  </footer>
+
+  <script>
+    const cursor=document.getElementById('cursor');
+    document.addEventListener('mousemove',e=>{
+      cursor.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;
+    });
+  </script>
+</body>
+</html>

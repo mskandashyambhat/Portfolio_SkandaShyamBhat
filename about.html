@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – M Skanda Shyam Bhat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="parallax" style="background-image: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1400&q=80');">
+    <div class="container">
+      <div class="section-title">ABOUT</div>
+      <div class="section-subtitle">Who I Am</div>
+      <div class="section-content">
+        Motivated engineer with proven skills in AI, secure cloud solutions, and full-stack web development. Experienced in leading diverse projects and passionate about innovative problem-solving.
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html" id="homeBtn">Home</a>
+
+  <footer>
+    &copy; 2025 M Skanda Shyam Bhat. All rights reserved.
+  </footer>
+
+  <script>
+    const cursor=document.getElementById('cursor');
+    document.addEventListener('mousemove',e=>{
+      cursor.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+html { scroll-behavior: smooth; }
+body {
+  background: #ffffff;
+  color: #222;
+  font-family: 'Poppins','Roboto',Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.9;
+  cursor: none;
+}
+header {
+  background: #f5f5f5;
+  padding: 25px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.container { width: 90%; max-width: 1100px; margin: auto; position: relative; z-index: 2; }
+nav { display: flex; align-items: center; justify-content: flex-end; }
+nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; }
+nav ul li a {
+  color: #222; text-decoration: none; font-weight: 500; font-size: 1.05rem;
+  transition: color 0.2s, transform 0.2s;
+}
+nav ul li a:hover { color: #f87171; transform: scale(1.05); }
+.hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 80px 0 50px 0; text-align: center; background: #fff; }
+.hero-text { max-width: 800px; }
+.hero-links { display: flex; justify-content: center; gap: 22px; margin-bottom: 40px; }
+.hero-links a {
+  font-size: 1.6rem; color: #222; border: 1.5px solid #f87171; border-radius: 50%;
+  width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+  text-decoration: none; transition: background 0.18s, color 0.18s, transform 0.2s;
+}
+.hero-links a:hover { background: #f87171; color: #fff; transform: scale(1.1); }
+.hero-text h1 { font-size: 2.8rem; margin: 0 0 20px 0; font-weight: 600; }
+.hero-text p { font-size: 1.2rem; margin-bottom: 38px; color: #444; line-height: 1.9; }
+.portfolio-btn {
+  background: #f87171; color: white; border: none; border-radius: 22px;
+  padding: 14px 38px; margin-right: 16px; font-size: 1.1em; cursor: pointer; font-weight: 600;
+  transition: background 0.18s, transform 0.2s;
+}
+.portfolio-btn:hover { background: #e85858; transform: scale(1.05); }
+.parallax { background-attachment: fixed; background-size: cover; background-position: center; position: relative; padding: 60px 0; }
+.parallax::before {
+  content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.55); z-index: 1;
+}
+.section-title { text-align: center; color: #f87171; margin: 64px 0 12px 0; letter-spacing: 2px; font-size: 1.1rem; font-weight: 500; }
+.section-subtitle { text-align: center; font-size: 2.2rem; margin-bottom: 36px; font-weight: 600; line-height: 1.3; color: #fff; }
+.section-content {
+  background: rgba(255,255,255,0.95); border-radius: 14px; padding: 48px 36px; margin-bottom: 36px;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.08); width: 100%; line-height: 1.9;
+}
+.two-cols { display: flex; flex-wrap: wrap; gap: 32px; }
+.col { flex: 1; min-width: 280px; }
+ul.custom-list { list-style-type: "⦿  "; margin-left: 28px; color: #222; font-size: 1.1rem; }
+ul.custom-list li { margin-bottom: 16px; }
+table { width: 100%; background: none; border-collapse: collapse; color: #222; font-size: 1.07rem; margin-bottom: 24px; }
+table th, table td { padding: 10px 6px; text-align: left; }
+table th { color: #f87171; font-weight: 600; }
+table tr:not(:last-child) td { border-bottom: 1px solid #ddd; }
+.contact-row { display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 1.15rem; color: #f87171; }
+.contact-row a, .contact-row span { text-decoration: none; display: flex; align-items: center; gap: 8px; color: #222; }
+.contact-row .fa { margin: 0; font-size: 1.3rem; color: #f87171; }
+footer { background: #f5f5f5; text-align: center; padding: 22px 0; color: #555; font-size: 1rem; letter-spacing: 1px; margin-top: 52px; }
+.cursor { width: 16px; height: 16px; border-radius: 50%; background-color: #f87171; position: fixed; transform: translate(-50%,-50%); pointer-events: none; z-index: 9999; transition: transform 0.1s ease; }
+#homeBtn {
+  position: fixed; bottom: 24px; right: 24px;
+  background: #f87171; color: #fff; padding: 12px 16px;
+  border-radius: 8px; cursor: pointer; font-weight: 600;
+  z-index: 1000; text-decoration: none; transition: background 0.18s;
+}
+#homeBtn:hover { background: #e85858; }
+@media (max-width:900px){ .two-cols{flex-direction:column;} nav{justify-content:center;} }
